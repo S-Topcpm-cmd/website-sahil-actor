@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Omar Sahil - Actor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts + AOS CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Quicksand', sans-serif;
+            background-color: #121212;
+            color: #f4f4f4;
+            overflow-x: hidden;
+        }
+
+        #bg-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            opacity: 0.1;
+            object-fit: cover;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 50px 20px;
+            background: #18181b;
+            border-radius: 25px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .title {
+            font-family: 'Pacifico', cursive;
+            font-size: 3.5em;
+            text-align: center;
+            color: #f5c518;
+            animation: fadeInUp 1.8s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .content img {
+            width: 400px;
+            border-radius: 20px;
+            border: 3px solid #444;
+            box-shadow: 0 8px 24px rgba(255, 215, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .content img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
+        }
+
+        .text-box {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .text-box h3 {
+            font-weight: normal;
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #ccc;
+        }
+
+        .facts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .fact-card {
+            width: 140px;
+            height: 80px;
+            perspective: 1000px;
+        }
+
+        .card-inner {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+
+        .fact-card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .card-front, .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background: #2c2c2e;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f5c518;
+            font-weight: bold;
+        }
+
+        .card-back {
+            transform: rotateY(180deg);
+        }
+
+        .section-title {
+            font-size: 2.5em;
+            text-align: center;
+            color: #f5c518;
+            margin-top: 70px;
+        }
+
+        .quote-box {
+            text-align: center;
+            font-style: italic;
+            font-size: 1.3em;
+            margin-top: 30px;
+            color: #bbb;
+            animation: fadeCycle 10s infinite;
+        }
+
+        @keyframes fadeCycle {
+            0%, 100% { opacity: 0; }
+            10%, 40% { opacity: 1; }
+            50%, 99% { opacity: 0; }
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+        }
+
+        iframe {
+            width: 325px;
+            height: 580px;
+            border-radius: 12px;
+            border: 2px solid #333;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .content img {
+                width: 100%;
+                max-width: 320px;
+            }
+
+            iframe {
+                width: 100%;
+                max-width: 320px;
+                height: 480px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Background Video -->
+<video autoplay muted loop id="bg-video">
+    <source src="bg.mp4" type="video/mp4">
+</video>
+
+<!-- Main Content -->
+<div class="container">
+    <h1 class="title">Omar Sahil</h1>
+
+    <!-- Intro Section -->
+    <div class="content" data-aos="fade-up">
+        <div class="text-box">
+            <h3>
+                Omar Sahil is a young and talented actor with a natural gift for performance and storytelling.
+                Originally from Afghanistan and now based in Germany, Omar brings passion, energy, and emotional depth to
+                every role he takes on. His ability to express powerful emotions and connect with the audience makes him stand out,
+                even at the beginning of his acting journey.
+            </h3>
+
+            <div class="facts">
+                <div class="fact-card"><div class="card-inner"><div class="card-front">Full Name</div><div class="card-back">Omar Sahil</div></div></div>
+                <div class="fact-card"><div class="card-inner"><div class="card-front">Age</div><div class="card-back">Around 18</div></div></div>
+                <div class="fact-card"><div class="card-inner"><div class="card-front">Height</div><div class="card-back">1.83 m</div></div></div>
+                <div class="fact-card"><div class="card-inner"><div class="card-front">Weight</div><div class="card-back">60 kg</div></div></div>
+                <div class="fact-card"><div class="card-inner"><div class="card-front">Nationality</div><div class="card-back">Tajik</div></div></div>
+            </div>
+        </div>
+        <img src="imge/sahil3.jpg" alt="Omar Sahil">
+    </div>
+
+    <!-- Personality -->
+    <h2 class="section-title">Personality</h2>
+    <p style="font-size: 1.1em; color: #ccc; line-height: 1.6; text-align: center;" data-aos="fade-up">
+        Fluent in German, English, and Farsi, Omar brings a diverse cultural background to his work,
+        allowing him to portray a wide range of characters. While continuing his education, he is fully dedicated to
+        growing as an actor and taking on new challenges, whether in front of the camera or on stage.
+    </p>
+
+    <!-- Quote -->
+    <div class="quote-box">"His eyes tell the whole story."</div>
+
+    <!-- Video -->
+    <div class="video-container" data-aos="fade-up">
+        <iframe src="https://www.tiktok.com/embed/7402345224372030753?autoplay=0&controls=0&loop=0"
+                frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+
+    <!-- Life and Career -->
+    <h2 class="section-title" style="color:#1887f5;">Life and Career</h2>
+    <div class="text-box" style="text-align: center;" data-aos="fade-up">
+        <h3>
+            In 2012, Ulusoy shot a short film, <strong>Paranoia</strong>. From 2013 until 2015, he played the lead role Yaman Koper in
+            <strong>Medcezir</strong> (Tide in English), loosely based on <strong>The O.C.</strong> His character, Yaman, was based on Ben McKenzie’s character Ryan Atwood.
+            <br><br>
+            From 2016 until 2017, Ulusoy starred in the TV series <strong>İçerde</strong> alongside Aras Bulut Iynemli and Bensu Soral —
+            the show was partially based on the movie <strong>The Departed</strong>.
+        </h3>
+    </div>
+</div>
+
+<!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</body>
+</html>

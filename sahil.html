@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Omar Sahil - Actor</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap');
+
+        body {
+            background: linear-gradient(to bottom right, #1c1c1e, #2c2c2e);
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 40px;
+            color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 25px;
+            background: #18181b;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .content img {
+            width: 400px;
+            height: auto;
+            border-radius: 20px;
+            border: 3px solid #444;
+            box-shadow: 0 8px 24px rgba(255, 215, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .content img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
+        }
+
+        .text-box {
+            max-width: 500px;
+            flex: 1;
+        }
+
+        .text-box h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #f5c518;
+        }
+
+        .text-box h3 {
+            font-weight: normal;
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #ccc;
+        }
+
+        ul {
+            margin-top: 20px;
+            padding-left: 20px;
+            font-size: 1.05em;
+            color: #bbb;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        li strong {
+            color: #f5c518;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            flex: 1;
+        }
+
+        .video-container iframe {
+            width: 325px;
+            height: 580px;
+            border-radius: 12px;
+            border: 2px solid #333;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Top Section -->
+    <div class="content">
+        <div class="text-box">
+            <h1>Omar Sahil</h1>
+            <h3>
+                Omar Sahil is a young and talented actor with a natural gift for performance and storytelling.
+                Originally from Afghanistan and now based in Germany, Omar brings passion, energy, and emotional depth to
+                every role he takes on. His ability to express powerful emotions and connect with the audience makes him stand out,
+                even at the beginning of his acting journey.
+            </h3>
+            <ul>
+                <li><strong>Full Name:</strong> Omar Sahil</li>
+                <li><strong>Age:</strong> Around 18</li>
+                <li><strong>Height:</strong> Approximately 1.83 m (6 ft 0 in)</li>
+                <li><strong>Weight:</strong> Around 60 kg (132 lbs)</li>
+                <li><strong>Nationality:</strong> Tajik</li>
+            </ul>
+        </div>
+        <img src="imge/sahil3.jpg" alt="Omar Sahil">
+    </div>
+
+    <!-- Personality Section -->
+    <h1 style="font-size: 50px; color: #f5c518; text-align: center;">Personality</h1>
+    <p style="font-size: 1.1em; color: #ccc; line-height: 1.6; text-align: center;">
+        Fluent in German, English, and Farsi, Omar brings a diverse cultural background to his work,
+        allowing him to portray a wide range of characters. While continuing his education, he is fully dedicated to
+        growing as an actor and taking on new challenges, whether in front of the camera or on stage.
+    </p>
+
+    <!-- New Video + Info Section -->
+    <div class="content" style="margin-top: 60px;">
+        <div class="video-container">
+            <iframe src="https://www.tiktok.com/embed/7402345224372030753?autoplay=0&controls=0&loop=0"
+                    frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="text-box">
+            <h1 style="font-size: 50px; color: #1887f5; text-align: center;">Life and career</h1>
+            <p style="font-size: 1.1em; color: #ccc; line-height: 1.6; text-align: center;">
+            <h3>
+                In 2012, Ulusoy shot a short film, <strong>Paranoia</strong>. From 2013 until 2015, he played the lead role Yaman Koper in
+                <strong>Medcezir</strong> (Tide in English), loosely based on <strong>The O.C.</strong> His character, Yaman, was based on Ben McKenzie’s character Ryan Atwood.<br><br>
+                From 2016 until 2017, Ulusoy starred in the TV series <strong>İçerde</strong> alongside Aras Bulut Iynemli and Bensu Soral — the show was partially based on the movie <strong>The Departed</strong>.
+            </h3>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+

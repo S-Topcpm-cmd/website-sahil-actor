@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cagatay Ulusoy</title>
+    <style>
+        body {
+            transition: background-color 0.5s ease;
+            text-align: center;
+            padding-top: 100px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        img {
+            border: 10px solid white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            max-width: 90%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        button:hover {
+            background-color: #34495e;
+        }
+    </style>
+</head>
+<body>
+
+<img src="imge/actorss_medcezir.jpg" height="640" width="640"/>
+
+<button onclick="changeBackgroundColor()">Change Color Now</button>
+<script>
+    const colors = ['#2c3e50', '#34495e', '#4682b4', '#2a3439', '#3a3f44'];
+    let index = 0;
+
+    function changeBackgroundColor() {
+        document.body.style.backgroundColor = colors[index];
+        index = (index + 1) % colors.length;
+    }
+
+    changeBackgroundColor();
+    setInterval(changeBackgroundColor, 60000);
+</script>
+</body>
+</html>

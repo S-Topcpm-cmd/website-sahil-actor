@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>SmartToolsHub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        header {
+            background: #4a90e2;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        .tool-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #eee;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>SmartToolsHub</h1>
+    <p>Your all-in-one AI-powered productivity toolkit</p>
+</header>
+
+<section class="tools-grid">
+    <div class="tool-card">
+        <h2>📝 AI Text Generator</h2>
+        <p>Create blog posts, social media content, or emails automatically.</p>
+    </div>
+    <div class="tool-card">
+        <h2>🔁 Paraphrasing Tool</h2>
+        <p>Rewrite your text with clarity and creativity.</p>
+    </div>
+    <div class="tool-card">
+        <h2>📄 Summarizer</h2>
+        <p>Get short summaries of long documents or articles.</p>
+    </div>
+    <div class="tool-card">
+        <h2>✔️ Grammar Checker</h2>
+        <p>Fix grammar, spelling, and style issues instantly.</p>
+    </div>
+    <div class="tool-card">
+        <h2>🎙️ Speech Tools</h2>
+        <p>Convert text to speech or voice to text easily.</p>
+    </div>
+    <div class="tool-card">
+        <h2>🤖 Chat Assistant</h2>
+        <p>Get answers and help from an AI chatbot anytime.</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 SmartToolsHub. All rights reserved.</p>
+</footer>
+</body>
+</html>
